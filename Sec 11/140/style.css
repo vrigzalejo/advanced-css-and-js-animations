@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* https://bennettfeely.com/clippy/ */
+
+img {
+    width: 300px;
+    height: 300px;
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+    /* clip-path: polygon(0% 0%, 100% 0%, 50% 100%); */
+    /* clip-path: polygon(0% 0%, 0% 100%, 100% 50%); */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
