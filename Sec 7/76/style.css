@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background: linear-gradient(45deg, #1a2f3f, #7094ce);
+    display: flex;
+    margin: 20px;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.card img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    left: 73%;
+    height: 500px;
+}
+
+.content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    opacity: 1;
+    left: 0;
+    transition-delay: 0.5s;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+    color: #fff;
+}
+
+.content p {
+    color: #fff;
+}
+
+.content a {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    padding: 10px 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-decoration: none;
+}
