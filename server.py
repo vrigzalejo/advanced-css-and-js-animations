@@ -5,7 +5,7 @@ import os
 
 PORT = 8000
 DIRECTORY = "."
-IGNORE_FILES = {".git", ".gitignore", ".history", "server.py"}
+IGNORE_FILES = {".git", ".gitignore", ".history", "server.py", "readme.md"}
 
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
